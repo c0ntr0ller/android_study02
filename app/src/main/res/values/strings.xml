@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Study App2</string>
+    <string name="textview">0</string>
+    <string name="toastButton">Toast</string>
+    <string name="countButton">Count</string>
+    <string name="randomButton">Random</string>
+</resources>
