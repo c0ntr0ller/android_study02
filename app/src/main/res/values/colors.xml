@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="textBack">#EB7F0D</color>
     <color name="screenBackground">#2196F3</color>
+    <color name="screenBackground2">#26C6DD</color>
     <color name="buttonBackground">#00BCD4</color>
     <color name="buttonText">#9C27B0</color>
 </resources>

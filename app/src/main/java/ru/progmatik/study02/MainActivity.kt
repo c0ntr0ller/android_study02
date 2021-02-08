@@ -1,5 +1,6 @@
 package ru.progmatik.study02
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -19,12 +20,24 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun countMe(view: View){
-        val currCount = textViewCount.text.toString()
+        val countString = textViewCount.text.toString()
 
-        var newCount: Int = Integer.parseInt(currCount)
+        var count: Int = Integer.parseInt(countString)
 
-        newCount++
+        count++
 
-        textViewCount.text = newCount.toString()
+        textViewCount.text = count.toString()
+    }
+
+    fun randomMe(view: View){
+        val randomIntent = Intent(this, SecondActivity::class.java)
+
+        val countString = textViewCount.text.toString()
+
+        val count = Integer.parseInt(countString)
+
+        randomIntent.putExtra(SecondActivity.TOTAL_COUNT, count)
+
+        startActivity(randomIntent)
     }
 }
